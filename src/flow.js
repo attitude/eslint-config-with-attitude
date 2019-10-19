@@ -2,17 +2,17 @@ export default {
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   extends: [
-    'plugin:flowtype/recommended'
+    'plugin:flowtype/recommended',
   ],
   plugins: [
-    'flowtype'
+    'flowtype',
   ],
   env: {
-    es6: true
+    es6: true,
   },
   rules: {
     'flowtype/array-style-complex-type': ['error', 'shorthand'],
@@ -29,6 +29,6 @@ export default {
     'flowtype/require-parameter-type': 'warn',
     'flowtype/require-readonly-react-props': 'error',
     'flowtype/semi': ['error', 'never'],
-    'flowtype/type-id-match': ['error', '^([A-Z][a-z0-9]*)+$']
-  }
+    'flowtype/type-id-match': ['error', '^([A-Z][a-z0-9]*)+$'],
+  },
 }

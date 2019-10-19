@@ -1,0 +1,12 @@
+{
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "quote-props": ["error", "as-needed", { "numbers": true }],
+    "quotes": ["error", "single"]
+  }
+}

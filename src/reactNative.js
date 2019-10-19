@@ -2,22 +2,22 @@ export default {
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   extends: [
-    'react-native'
+    'react-native',
   ],
   plugins: [
-    'react-native'
+    'react-native',
   ],
   env: {
     es6: true,
-    'react-native/react-native': true
+    'react-native/react-native': true,
   },
   rules: {
     'import/no-namespace': 'off',
     'import/prefer-default-export': 'off',
     'react/jsx-wrap-multilines': 'off',
-  }
+  },
 }

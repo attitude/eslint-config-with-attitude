@@ -4,6 +4,6 @@ export default {
     require.resolve('./flow'),
     require.resolve('./react'),
     require.resolve('./reactNative'),
-    require.resolve('./standard')
-  ]
+    require.resolve('./standard'),
+  ],
 }

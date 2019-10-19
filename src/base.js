@@ -2,19 +2,19 @@ export default {
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   extends: [
     'esnext',
     'plugin:import/recommended',
-    'plugin:promise/recommended'
+    'plugin:promise/recommended',
   ],
   env: {
-    es6: true
+    es6: true,
   },
   plugins: [
-    'import'
+    'import',
   ],
   rules: {
     'array-bracket-spacing': ['error', 'never'],
@@ -34,12 +34,12 @@ export default {
     'padding-line-between-statements': [
       'error',
       { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
-      { blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] }
+      { blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
     ],
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
     'space-before-blocks': 'error',
     'space-in-parens': ['error', 'never'],
     'space-unary-ops': 'error',
-  }
+  },
 }
