@@ -9,6 +9,7 @@ export default {
     'react-native',
   ],
   plugins: [
+    'babel',
     'react-native',
   ],
   env: {
@@ -16,6 +17,8 @@ export default {
     'react-native/react-native': true,
   },
   rules: {
+    'no-invalid-this': 'off',
+		'babel/no-invalid-this': 'error',
     'import/no-namespace': 'off',
     'import/prefer-default-export': 'off',
     'react/jsx-wrap-multilines': 'off',

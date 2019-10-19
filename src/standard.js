@@ -16,6 +16,8 @@ export default {
   },
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
+    'object-curly-newline': ['error', { consistent: true }],
+    'quote-props': ['error', 'as-needed', { numbers: true }],
     'standard/array-bracket-even-spacing': [2, 'either'],
     'standard/computed-property-even-spacing': [2, 'even'],
     'standard/object-curly-even-spacing': [2, 'either'],
