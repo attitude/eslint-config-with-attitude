@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-with-attitude",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Opinionated eslint config",
   "main": "dist/index.js",
   "files": [
