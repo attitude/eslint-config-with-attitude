@@ -27,6 +27,11 @@ export default {
     'react/no-access-state-in-setstate': 'error',
     'react/no-this-in-sfc': 'error',
     'react/prefer-read-only-props': 'off',
+    'react/sort-comp': 'error',
+    'react/sort-prop-types': ['error', {
+      callbacksLast: true,
+      sortShapeProp: true,
+    }],
 
     'react/jsx-child-element-spacing': 'error',
     'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
@@ -47,7 +52,13 @@ export default {
     }],
     'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-fragments': ['error', 'syntax'],
+    'react/jsx-first-prop-new-line': ['error'],
     'react/jsx-indent': ['error', 2],
+    'react/jsx-handler-names': ['error', {
+      eventHandlerPrefix: '_?_?handle',
+      eventHandlerPropPrefix: 'on',
+    }],
+    'react/jsx-max-props-per-line': ['error', { when: 'multiline' }],
     'react/jsx-one-expression-per-line': ['error', { allow: 'single-child' }],
     'react/jsx-sort-props': ['error', {
       callbacksLast: true,

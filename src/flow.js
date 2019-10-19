@@ -27,8 +27,9 @@ export default {
     'flowtype/no-types-missing-file-annotation': 0,
     'flowtype/object-type-delimiter': ['error', 'comma'],
     'flowtype/require-parameter-type': 'warn',
-    'flowtype/require-readonly-react-props': 'error',
+    'flowtype/require-readonly-react-props': 'warn',
     'flowtype/semi': ['error', 'never'],
+    'flowtype/sort-keys': 'error',
     'flowtype/type-id-match': ['error', '^([A-Z][a-z0-9]*)+$'],
   },
 }
