@@ -12,8 +12,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf ./dist && yarn babel src/ -d dist",
-    "npm:publish": "git push --tags",
-    "npm:publish:try": "git push --tags && npm publish --dry-run"
+    "npm:git:push": "git push && git push --tags",
+    "git:prepublish": "yarn && yarn npm:git:push",
+    "npm:publish:try": "yarn git:prepublish && npm publish --dry-run",
+    "npm:publish": "yarn git:prepublish && npm publish"
   },
   "repository": {
     "type": "git",
