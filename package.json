@@ -10,7 +10,7 @@
     "eslint-config-with-attitude-linker": "linker.sh"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "audit:fix": "npm i --package-lock-only && npm audit fix && rm yarn.lock && yarn import && rm package-lock.json && git add yarn.lock git commit -m 'Dependency audit fix'",
     "build": "rm -rf ./dist && yarn babel src/ -d dist",
     "npm:git:push": "yarn build && git push && git push --tags",
     "git:prepublish": "yarn && yarn npm:git:push",
@@ -68,8 +68,5 @@
     "eslint-plugin-simple-import-sort": "^4.0.0",
     "eslint-plugin-sort-destructure-keys": "^1.3.3",
     "eslint-plugin-standard": "^4.0.1"
-  },
-  "resolutions": {
-    "lodash": "^4.17.19"
   }
 }
