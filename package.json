@@ -10,8 +10,11 @@
     "eslint-config-with-attitude-linker": "linker.sh"
   },
   "scripts": {
-    "audit:fix": "npm i --package-lock-only && npm audit fix && rm yarn.lock && yarn import && rm package-lock.json && git add yarn.lock git commit -m 'Dependency audit fix'",
+    "audit:fix": "npm i --package-lock-only && npm audit fix && rm yarn.lock && yarn import && rm package-lock.json && git add yarn.lock git commit -m 'Dependency audit fix' && rm -rf ./node_modules && yarn && yarn build",
     "build": "rm -rf ./dist && yarn babel src/ -d dist",
+    "version:new-major": "npm version major",
+    "version:new-minor": "npm version minor",
+    "version:new-patch": "npm version patch",
     "npm:git:push": "yarn build && git push && git push --tags",
     "git:prepublish": "yarn && yarn npm:git:push",
     "npm:publish:try": "yarn git:prepublish && npm publish --dry-run",
